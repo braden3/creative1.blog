@@ -1,0 +1,230 @@
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+p {
+  font-size: 1rem;
+  font-style: normal;
+}
+.navbar {
+  /*background-color: lightblue !important;*/
+  /*background: lightblue !important;*/
+}
+
+.navbar-nav {
+  /*background: lightblue !important;*/
+}
+
+.nav-item active {
+  text-decoration-color: white;
+}
+
+.imageList {
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content:space-around;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+
+.imagecol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.icon1 {
+  width: 200px;
+}
+
+.stars {
+  width: 500px;
+}
+
+.icon {
+  max-width: 500px;
+  max-height: 500px;
+  color: maroon;
+  justify-content: space-around;
+  border:0;
+}
+                                               /*THIS IS THE REVIEW IMAGE STUFF*/
+.reviewList {
+  display: flex;
+  /*flex-direction: row;*/
+  align-items: flex-start;
+  /*justify-content:space-around;*/
+  padding-left: 100px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.reviewCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.reviewRow {
+  display: flex;
+}
+
+.review {
+  display: flex;
+  max-width: 500px;
+  max-height: 500px;
+  color: maroon;
+  justify-content: space-around;
+  border:0;
+  padding: 10px;
+}
+
+.reviewIntroCol {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+
+.reviewIntro {
+  max-width: 500px;
+  max-height: 500px;
+  font-size: 1.5rem;
+  margin-left: 100px;
+  border: 2px solid lightgrey;
+  color: maroon;
+  justify-content: space-around;
+  border:0;
+  padding: 10px;
+}
+
+.travelImageGrid {                         /*THIS IS THE TRAVEL STYLE STUFF*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.travelImageCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.travelImage {
+  width:50%;
+  height:auto;
+  border:0;
+  padding: 15px;
+  font-size: 3rem;
+  font-color: maroon;
+}
+
+.about-box {                                      /*THIS IS THE ABOUT SECTION*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 500px;
+}
+.aboutimage {
+  display: flex;
+  justify-content: center;
+  max-width:500px;
+  margin: 20px;
+  border: solid;
+  border-color: lightgrey;
+}
+
+.aboutp {
+  margin: 20px;
+  margin-bottom: auto;
+  border: solid;
+  border-color: lightgrey;
+  border-radius: 100;
+  padding: 10px;
+}
+
+.footer {
+  /*position: fixed;*/
+  /*left: 0;*/
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  /*margin-top: 50%;*/
+  /*margin: 0 auto;
+  justify-content: center !important;*/
+}
+
+.footer1 {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+  .aboutimage {
+    max-width: 100px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+    .sign-up,
+    .feature-1,
+    .feature-2,
+    .feature-3, {
+      width: 50%
+    }
+  }
+  .page {
+    width: 50%;
+  }
+  .aboutimage {
+    max-width: 50%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: white; /* Blue */
+  }
+  .page {
+    width: 100%/*960px*/;
+    margin: 0 auto;
+  }
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+   width: 33.3%;
+  }
+  .header {
+    height: 400px;
+  }
+  .sign-up {
+    height: 200px;
+    order: 1;
+  }
+  .content {
+    order: 2;
+  }
+}
